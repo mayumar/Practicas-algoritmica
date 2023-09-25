@@ -1,4 +1,4 @@
-CMakeFiles/prueba.dir/tiempos.cpp.o: \
+CMakeFiles/ejecutable.dir/tiempos.cpp.o: \
  /home/mayumar/Escritorio/practicasalg/MaterialPractica1/tiempos.cpp \
  /usr/include/stdc-predef.h \
  /home/mayumar/Escritorio/practicasalg/MaterialPractica1/tiempos.hpp \

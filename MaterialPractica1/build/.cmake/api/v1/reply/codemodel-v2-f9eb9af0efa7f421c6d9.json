@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "prueba::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-prueba-Debug-281ec3f0da6fdb13b68c.json",
-					"name" : "prueba",
+					"id" : "ejecutable::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ejecutable-Debug-358bcaba76a3d1daf420.json",
+					"name" : "ejecutable",
 					"projectIndex" : 0
 				}
 			]

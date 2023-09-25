@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/mayumar/Escritorio/practicasalg/MaterialPractica1/ClaseTiempo.cpp" "CMakeFiles/prueba.dir/ClaseTiempo.cpp.o" "gcc" "CMakeFiles/prueba.dir/ClaseTiempo.cpp.o.d"
   "/home/mayumar/Escritorio/practicasalg/MaterialPractica1/func_seleccion.cpp" "CMakeFiles/prueba.dir/func_seleccion.cpp.o" "gcc" "CMakeFiles/prueba.dir/func_seleccion.cpp.o.d"
   "/home/mayumar/Escritorio/practicasalg/MaterialPractica1/main.cpp" "CMakeFiles/prueba.dir/main.cpp.o" "gcc" "CMakeFiles/prueba.dir/main.cpp.o.d"
   "/home/mayumar/Escritorio/practicasalg/MaterialPractica1/metodos.cpp" "CMakeFiles/prueba.dir/metodos.cpp.o" "gcc" "CMakeFiles/prueba.dir/metodos.cpp.o.d"

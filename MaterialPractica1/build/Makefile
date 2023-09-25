@@ -117,24 +117,48 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named prueba
+# Target rules for targets named ejecutable
 
 # Build rule for target.
-prueba: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 prueba
-.PHONY : prueba
+ejecutable: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ejecutable
+.PHONY : ejecutable
 
 # fast build rule for target.
-prueba/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/prueba.dir/build.make CMakeFiles/prueba.dir/build
-.PHONY : prueba/fast
+ejecutable/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ejecutable.dir/build.make CMakeFiles/ejecutable.dir/build
+.PHONY : ejecutable/fast
+
+ClaseTiempo.o: ClaseTiempo.cpp.o
+.PHONY : ClaseTiempo.o
+
+# target to build an object file
+ClaseTiempo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ejecutable.dir/build.make CMakeFiles/ejecutable.dir/ClaseTiempo.cpp.o
+.PHONY : ClaseTiempo.cpp.o
+
+ClaseTiempo.i: ClaseTiempo.cpp.i
+.PHONY : ClaseTiempo.i
+
+# target to preprocess a source file
+ClaseTiempo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ejecutable.dir/build.make CMakeFiles/ejecutable.dir/ClaseTiempo.cpp.i
+.PHONY : ClaseTiempo.cpp.i
+
+ClaseTiempo.s: ClaseTiempo.cpp.s
+.PHONY : ClaseTiempo.s
+
+# target to generate assembly for a file
+ClaseTiempo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ejecutable.dir/build.make CMakeFiles/ejecutable.dir/ClaseTiempo.cpp.s
+.PHONY : ClaseTiempo.cpp.s
 
 func_seleccion.o: func_seleccion.cpp.o
 .PHONY : func_seleccion.o
 
 # target to build an object file
 func_seleccion.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/prueba.dir/build.make CMakeFiles/prueba.dir/func_seleccion.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ejecutable.dir/build.make CMakeFiles/ejecutable.dir/func_seleccion.cpp.o
 .PHONY : func_seleccion.cpp.o
 
 func_seleccion.i: func_seleccion.cpp.i
@@ -142,7 +166,7 @@ func_seleccion.i: func_seleccion.cpp.i
 
 # target to preprocess a source file
 func_seleccion.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/prueba.dir/build.make CMakeFiles/prueba.dir/func_seleccion.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ejecutable.dir/build.make CMakeFiles/ejecutable.dir/func_seleccion.cpp.i
 .PHONY : func_seleccion.cpp.i
 
 func_seleccion.s: func_seleccion.cpp.s
@@ -150,7 +174,7 @@ func_seleccion.s: func_seleccion.cpp.s
 
 # target to generate assembly for a file
 func_seleccion.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/prueba.dir/build.make CMakeFiles/prueba.dir/func_seleccion.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ejecutable.dir/build.make CMakeFiles/ejecutable.dir/func_seleccion.cpp.s
 .PHONY : func_seleccion.cpp.s
 
 main.o: main.cpp.o
@@ -158,7 +182,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/prueba.dir/build.make CMakeFiles/prueba.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ejecutable.dir/build.make CMakeFiles/ejecutable.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -166,7 +190,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/prueba.dir/build.make CMakeFiles/prueba.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ejecutable.dir/build.make CMakeFiles/ejecutable.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -174,7 +198,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/prueba.dir/build.make CMakeFiles/prueba.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ejecutable.dir/build.make CMakeFiles/ejecutable.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 metodos.o: metodos.cpp.o
@@ -182,7 +206,7 @@ metodos.o: metodos.cpp.o
 
 # target to build an object file
 metodos.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/prueba.dir/build.make CMakeFiles/prueba.dir/metodos.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ejecutable.dir/build.make CMakeFiles/ejecutable.dir/metodos.cpp.o
 .PHONY : metodos.cpp.o
 
 metodos.i: metodos.cpp.i
@@ -190,7 +214,7 @@ metodos.i: metodos.cpp.i
 
 # target to preprocess a source file
 metodos.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/prueba.dir/build.make CMakeFiles/prueba.dir/metodos.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ejecutable.dir/build.make CMakeFiles/ejecutable.dir/metodos.cpp.i
 .PHONY : metodos.cpp.i
 
 metodos.s: metodos.cpp.s
@@ -198,7 +222,7 @@ metodos.s: metodos.cpp.s
 
 # target to generate assembly for a file
 metodos.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/prueba.dir/build.make CMakeFiles/prueba.dir/metodos.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ejecutable.dir/build.make CMakeFiles/ejecutable.dir/metodos.cpp.s
 .PHONY : metodos.cpp.s
 
 tiempos.o: tiempos.cpp.o
@@ -206,7 +230,7 @@ tiempos.o: tiempos.cpp.o
 
 # target to build an object file
 tiempos.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/prueba.dir/build.make CMakeFiles/prueba.dir/tiempos.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ejecutable.dir/build.make CMakeFiles/ejecutable.dir/tiempos.cpp.o
 .PHONY : tiempos.cpp.o
 
 tiempos.i: tiempos.cpp.i
@@ -214,7 +238,7 @@ tiempos.i: tiempos.cpp.i
 
 # target to preprocess a source file
 tiempos.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/prueba.dir/build.make CMakeFiles/prueba.dir/tiempos.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ejecutable.dir/build.make CMakeFiles/ejecutable.dir/tiempos.cpp.i
 .PHONY : tiempos.cpp.i
 
 tiempos.s: tiempos.cpp.s
@@ -222,7 +246,7 @@ tiempos.s: tiempos.cpp.s
 
 # target to generate assembly for a file
 tiempos.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/prueba.dir/build.make CMakeFiles/prueba.dir/tiempos.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ejecutable.dir/build.make CMakeFiles/ejecutable.dir/tiempos.cpp.s
 .PHONY : tiempos.cpp.s
 
 # Help Target
@@ -233,7 +257,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... prueba"
+	@echo "... ejecutable"
+	@echo "... ClaseTiempo.o"
+	@echo "... ClaseTiempo.i"
+	@echo "... ClaseTiempo.s"
 	@echo "... func_seleccion.o"
 	@echo "... func_seleccion.i"
 	@echo "... func_seleccion.s"

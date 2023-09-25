@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/prueba.dir/ClaseTiempo.cpp.o"
+  "CMakeFiles/prueba.dir/ClaseTiempo.cpp.o.d"
   "CMakeFiles/prueba.dir/func_seleccion.cpp.o"
   "CMakeFiles/prueba.dir/func_seleccion.cpp.o.d"
   "CMakeFiles/prueba.dir/main.cpp.o"

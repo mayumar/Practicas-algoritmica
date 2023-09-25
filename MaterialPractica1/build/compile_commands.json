@@ -1,22 +1,27 @@
 [
 {
   "directory": "/home/mayumar/Escritorio/practicasalg/MaterialPractica1/build",
-  "command": "/usr/bin/c++   -g -o CMakeFiles/prueba.dir/main.cpp.o -c /home/mayumar/Escritorio/practicasalg/MaterialPractica1/main.cpp",
+  "command": "/usr/bin/c++   -g -o CMakeFiles/ejecutable.dir/main.cpp.o -c /home/mayumar/Escritorio/practicasalg/MaterialPractica1/main.cpp",
   "file": "/home/mayumar/Escritorio/practicasalg/MaterialPractica1/main.cpp"
 },
 {
   "directory": "/home/mayumar/Escritorio/practicasalg/MaterialPractica1/build",
-  "command": "/usr/bin/c++   -g -o CMakeFiles/prueba.dir/func_seleccion.cpp.o -c /home/mayumar/Escritorio/practicasalg/MaterialPractica1/func_seleccion.cpp",
+  "command": "/usr/bin/c++   -g -o CMakeFiles/ejecutable.dir/func_seleccion.cpp.o -c /home/mayumar/Escritorio/practicasalg/MaterialPractica1/func_seleccion.cpp",
   "file": "/home/mayumar/Escritorio/practicasalg/MaterialPractica1/func_seleccion.cpp"
 },
 {
   "directory": "/home/mayumar/Escritorio/practicasalg/MaterialPractica1/build",
-  "command": "/usr/bin/c++   -g -o CMakeFiles/prueba.dir/metodos.cpp.o -c /home/mayumar/Escritorio/practicasalg/MaterialPractica1/metodos.cpp",
+  "command": "/usr/bin/c++   -g -o CMakeFiles/ejecutable.dir/metodos.cpp.o -c /home/mayumar/Escritorio/practicasalg/MaterialPractica1/metodos.cpp",
   "file": "/home/mayumar/Escritorio/practicasalg/MaterialPractica1/metodos.cpp"
 },
 {
   "directory": "/home/mayumar/Escritorio/practicasalg/MaterialPractica1/build",
-  "command": "/usr/bin/c++   -g -o CMakeFiles/prueba.dir/tiempos.cpp.o -c /home/mayumar/Escritorio/practicasalg/MaterialPractica1/tiempos.cpp",
+  "command": "/usr/bin/c++   -g -o CMakeFiles/ejecutable.dir/tiempos.cpp.o -c /home/mayumar/Escritorio/practicasalg/MaterialPractica1/tiempos.cpp",
   "file": "/home/mayumar/Escritorio/practicasalg/MaterialPractica1/tiempos.cpp"
+},
+{
+  "directory": "/home/mayumar/Escritorio/practicasalg/MaterialPractica1/build",
+  "command": "/usr/bin/c++   -g -o CMakeFiles/ejecutable.dir/ClaseTiempo.cpp.o -c /home/mayumar/Escritorio/practicasalg/MaterialPractica1/ClaseTiempo.cpp",
+  "file": "/home/mayumar/Escritorio/practicasalg/MaterialPractica1/ClaseTiempo.cpp"
 }
 ]

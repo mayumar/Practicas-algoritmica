@@ -1,10 +1,8 @@
 #include "metodos.hpp"
 #include "func_seleccion.hpp"
 #include "tiempos.hpp"
-#include <vector>
 #include <iostream>
-
-using namespace std;
+#include <fstream>
 
 void ordenacionSeleccion(){
     //pedir nMin, nMax, inc, rep
@@ -45,6 +43,7 @@ void ordenacionSeleccion(){
 
 
     tiemposOrdenacionSeleccion(nMin, nMax, rep, inc, tiemposReales, numeroElementos);    
+    exportarDatos(tiemposReales, numeroElementos);
 
 
 }
@@ -54,4 +53,14 @@ void matrizCuadrado(){
 }
 void fibonacciRecursivo(){
 
+}
+
+void const exportarDatos(const vector<double> &tiemposReales, const vector<double> &numeroElementos){
+    ofstream file("tiemposReales.txt");
+    
+    for(auto i = 0; i != numeroElementos.size(); i++){
+        file << numeroElementos[i] << " " << tiemposReales[i] << endl;
+    }
+
+    file.close();
 }

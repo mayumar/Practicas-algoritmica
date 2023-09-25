@@ -81,7 +81,7 @@ Data Type: struct timespec
       return stopT-startT;
     }
   };
-
+/*
 int main()
 {
 	Clock time;
@@ -103,3 +103,4 @@ int main()
 	}
 	return 0;
 }
+*/

@@ -9,6 +9,6 @@ using namespace std;
     void ordenacionSeleccion(vector<int>&v);
     bool estaOrdenado(const vector<int> &v);
 
-    void imprimirVector(const vector<int> &v);
+    void imprimirVector(const vector<double> &v);
 
 #endif

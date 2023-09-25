@@ -36,7 +36,7 @@ bool estaOrdenado(const vector<int> &v){
     return true;
 }
 
-void imprimirVector(const vector<int> &v){
+void imprimirVector(const vector<double> &v){
     
     for(int i = 0; i < v.size(); i++){
         cout << v[i] << " ";
