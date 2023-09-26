@@ -125,19 +125,33 @@ CMakeFiles/ejecutable.dir/tiempos.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ejecutable.dir/tiempos.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mayumar/Escritorio/practicasalg/MaterialPractica1/tiempos.cpp -o CMakeFiles/ejecutable.dir/tiempos.cpp.s
 
-CMakeFiles/ejecutable.dir/ClaseTiempo.cpp.o: CMakeFiles/ejecutable.dir/flags.make
-CMakeFiles/ejecutable.dir/ClaseTiempo.cpp.o: ../ClaseTiempo.cpp
-CMakeFiles/ejecutable.dir/ClaseTiempo.cpp.o: CMakeFiles/ejecutable.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayumar/Escritorio/practicasalg/MaterialPractica1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ejecutable.dir/ClaseTiempo.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ejecutable.dir/ClaseTiempo.cpp.o -MF CMakeFiles/ejecutable.dir/ClaseTiempo.cpp.o.d -o CMakeFiles/ejecutable.dir/ClaseTiempo.cpp.o -c /home/mayumar/Escritorio/practicasalg/MaterialPractica1/ClaseTiempo.cpp
+CMakeFiles/ejecutable.dir/ajustes.cpp.o: CMakeFiles/ejecutable.dir/flags.make
+CMakeFiles/ejecutable.dir/ajustes.cpp.o: ../ajustes.cpp
+CMakeFiles/ejecutable.dir/ajustes.cpp.o: CMakeFiles/ejecutable.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayumar/Escritorio/practicasalg/MaterialPractica1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ejecutable.dir/ajustes.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ejecutable.dir/ajustes.cpp.o -MF CMakeFiles/ejecutable.dir/ajustes.cpp.o.d -o CMakeFiles/ejecutable.dir/ajustes.cpp.o -c /home/mayumar/Escritorio/practicasalg/MaterialPractica1/ajustes.cpp
 
-CMakeFiles/ejecutable.dir/ClaseTiempo.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ejecutable.dir/ClaseTiempo.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mayumar/Escritorio/practicasalg/MaterialPractica1/ClaseTiempo.cpp > CMakeFiles/ejecutable.dir/ClaseTiempo.cpp.i
+CMakeFiles/ejecutable.dir/ajustes.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ejecutable.dir/ajustes.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mayumar/Escritorio/practicasalg/MaterialPractica1/ajustes.cpp > CMakeFiles/ejecutable.dir/ajustes.cpp.i
 
-CMakeFiles/ejecutable.dir/ClaseTiempo.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ejecutable.dir/ClaseTiempo.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mayumar/Escritorio/practicasalg/MaterialPractica1/ClaseTiempo.cpp -o CMakeFiles/ejecutable.dir/ClaseTiempo.cpp.s
+CMakeFiles/ejecutable.dir/ajustes.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ejecutable.dir/ajustes.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mayumar/Escritorio/practicasalg/MaterialPractica1/ajustes.cpp -o CMakeFiles/ejecutable.dir/ajustes.cpp.s
+
+CMakeFiles/ejecutable.dir/sistemaEcuaciones.cpp.o: CMakeFiles/ejecutable.dir/flags.make
+CMakeFiles/ejecutable.dir/sistemaEcuaciones.cpp.o: ../sistemaEcuaciones.cpp
+CMakeFiles/ejecutable.dir/sistemaEcuaciones.cpp.o: CMakeFiles/ejecutable.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayumar/Escritorio/practicasalg/MaterialPractica1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ejecutable.dir/sistemaEcuaciones.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ejecutable.dir/sistemaEcuaciones.cpp.o -MF CMakeFiles/ejecutable.dir/sistemaEcuaciones.cpp.o.d -o CMakeFiles/ejecutable.dir/sistemaEcuaciones.cpp.o -c /home/mayumar/Escritorio/practicasalg/MaterialPractica1/sistemaEcuaciones.cpp
+
+CMakeFiles/ejecutable.dir/sistemaEcuaciones.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ejecutable.dir/sistemaEcuaciones.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mayumar/Escritorio/practicasalg/MaterialPractica1/sistemaEcuaciones.cpp > CMakeFiles/ejecutable.dir/sistemaEcuaciones.cpp.i
+
+CMakeFiles/ejecutable.dir/sistemaEcuaciones.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ejecutable.dir/sistemaEcuaciones.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mayumar/Escritorio/practicasalg/MaterialPractica1/sistemaEcuaciones.cpp -o CMakeFiles/ejecutable.dir/sistemaEcuaciones.cpp.s
 
 # Object files for target ejecutable
 ejecutable_OBJECTS = \
@@ -145,7 +159,8 @@ ejecutable_OBJECTS = \
 "CMakeFiles/ejecutable.dir/func_seleccion.cpp.o" \
 "CMakeFiles/ejecutable.dir/metodos.cpp.o" \
 "CMakeFiles/ejecutable.dir/tiempos.cpp.o" \
-"CMakeFiles/ejecutable.dir/ClaseTiempo.cpp.o"
+"CMakeFiles/ejecutable.dir/ajustes.cpp.o" \
+"CMakeFiles/ejecutable.dir/sistemaEcuaciones.cpp.o"
 
 # External object files for target ejecutable
 ejecutable_EXTERNAL_OBJECTS =
@@ -154,10 +169,11 @@ ejecutable: CMakeFiles/ejecutable.dir/main.cpp.o
 ejecutable: CMakeFiles/ejecutable.dir/func_seleccion.cpp.o
 ejecutable: CMakeFiles/ejecutable.dir/metodos.cpp.o
 ejecutable: CMakeFiles/ejecutable.dir/tiempos.cpp.o
-ejecutable: CMakeFiles/ejecutable.dir/ClaseTiempo.cpp.o
+ejecutable: CMakeFiles/ejecutable.dir/ajustes.cpp.o
+ejecutable: CMakeFiles/ejecutable.dir/sistemaEcuaciones.cpp.o
 ejecutable: CMakeFiles/ejecutable.dir/build.make
 ejecutable: CMakeFiles/ejecutable.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mayumar/Escritorio/practicasalg/MaterialPractica1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable ejecutable"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mayumar/Escritorio/practicasalg/MaterialPractica1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable ejecutable"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ejecutable.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -9,4 +9,6 @@ using namespace std;
                                     int incremento, vector<double> &tiemposReales,
                                     vector<double> &numeroElementos);
 
+    void calcularTiemposEstimadosPolinomico(const vector <double> &numeroElementos, const vector <double> &a, vector <double> &tiemposEstimados);
+
 #endif

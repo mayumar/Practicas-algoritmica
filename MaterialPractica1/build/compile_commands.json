@@ -21,7 +21,12 @@
 },
 {
   "directory": "/home/mayumar/Escritorio/practicasalg/MaterialPractica1/build",
-  "command": "/usr/bin/c++   -g -o CMakeFiles/ejecutable.dir/ClaseTiempo.cpp.o -c /home/mayumar/Escritorio/practicasalg/MaterialPractica1/ClaseTiempo.cpp",
-  "file": "/home/mayumar/Escritorio/practicasalg/MaterialPractica1/ClaseTiempo.cpp"
+  "command": "/usr/bin/c++   -g -o CMakeFiles/ejecutable.dir/ajustes.cpp.o -c /home/mayumar/Escritorio/practicasalg/MaterialPractica1/ajustes.cpp",
+  "file": "/home/mayumar/Escritorio/practicasalg/MaterialPractica1/ajustes.cpp"
+},
+{
+  "directory": "/home/mayumar/Escritorio/practicasalg/MaterialPractica1/build",
+  "command": "/usr/bin/c++   -g -o CMakeFiles/ejecutable.dir/sistemaEcuaciones.cpp.o -c /home/mayumar/Escritorio/practicasalg/MaterialPractica1/sistemaEcuaciones.cpp",
+  "file": "/home/mayumar/Escritorio/practicasalg/MaterialPractica1/sistemaEcuaciones.cpp"
 }
 ]

@@ -1,6 +1,7 @@
 #include "metodos.hpp"
 #include "func_seleccion.hpp"
 #include "tiempos.hpp"
+#include "ajustes.hpp"
 #include <iostream>
 #include <fstream>
 
@@ -21,7 +22,7 @@ void ordenacionSeleccion(){
     */
 
     int nMin, nMax, inc, rep;
-    vector<double> tiemposReales, numeroElementos;
+    vector<double> tiemposReales, numeroElementos, a(3), tiemposEstimados;
 
 
     cout << "Introduzca el numero minimo de elementos: ";
@@ -44,6 +45,12 @@ void ordenacionSeleccion(){
 
     tiemposOrdenacionSeleccion(nMin, nMax, rep, inc, tiemposReales, numeroElementos);    
     exportarDatos(tiemposReales, numeroElementos);
+    ajusteCuadratico(numeroElementos, tiemposReales, a);
+    calcularTiemposEstimadosPolinomico(numeroElementos, a, tiemposEstimados);
+
+    cout << endl;
+    imprimirVector(tiemposEstimados);
+    cout << endl;
 
 
 }

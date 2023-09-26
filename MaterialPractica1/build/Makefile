@@ -129,29 +129,29 @@ ejecutable/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ejecutable.dir/build.make CMakeFiles/ejecutable.dir/build
 .PHONY : ejecutable/fast
 
-ClaseTiempo.o: ClaseTiempo.cpp.o
-.PHONY : ClaseTiempo.o
+ajustes.o: ajustes.cpp.o
+.PHONY : ajustes.o
 
 # target to build an object file
-ClaseTiempo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ejecutable.dir/build.make CMakeFiles/ejecutable.dir/ClaseTiempo.cpp.o
-.PHONY : ClaseTiempo.cpp.o
+ajustes.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ejecutable.dir/build.make CMakeFiles/ejecutable.dir/ajustes.cpp.o
+.PHONY : ajustes.cpp.o
 
-ClaseTiempo.i: ClaseTiempo.cpp.i
-.PHONY : ClaseTiempo.i
+ajustes.i: ajustes.cpp.i
+.PHONY : ajustes.i
 
 # target to preprocess a source file
-ClaseTiempo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ejecutable.dir/build.make CMakeFiles/ejecutable.dir/ClaseTiempo.cpp.i
-.PHONY : ClaseTiempo.cpp.i
+ajustes.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ejecutable.dir/build.make CMakeFiles/ejecutable.dir/ajustes.cpp.i
+.PHONY : ajustes.cpp.i
 
-ClaseTiempo.s: ClaseTiempo.cpp.s
-.PHONY : ClaseTiempo.s
+ajustes.s: ajustes.cpp.s
+.PHONY : ajustes.s
 
 # target to generate assembly for a file
-ClaseTiempo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ejecutable.dir/build.make CMakeFiles/ejecutable.dir/ClaseTiempo.cpp.s
-.PHONY : ClaseTiempo.cpp.s
+ajustes.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ejecutable.dir/build.make CMakeFiles/ejecutable.dir/ajustes.cpp.s
+.PHONY : ajustes.cpp.s
 
 func_seleccion.o: func_seleccion.cpp.o
 .PHONY : func_seleccion.o
@@ -225,6 +225,30 @@ metodos.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ejecutable.dir/build.make CMakeFiles/ejecutable.dir/metodos.cpp.s
 .PHONY : metodos.cpp.s
 
+sistemaEcuaciones.o: sistemaEcuaciones.cpp.o
+.PHONY : sistemaEcuaciones.o
+
+# target to build an object file
+sistemaEcuaciones.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ejecutable.dir/build.make CMakeFiles/ejecutable.dir/sistemaEcuaciones.cpp.o
+.PHONY : sistemaEcuaciones.cpp.o
+
+sistemaEcuaciones.i: sistemaEcuaciones.cpp.i
+.PHONY : sistemaEcuaciones.i
+
+# target to preprocess a source file
+sistemaEcuaciones.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ejecutable.dir/build.make CMakeFiles/ejecutable.dir/sistemaEcuaciones.cpp.i
+.PHONY : sistemaEcuaciones.cpp.i
+
+sistemaEcuaciones.s: sistemaEcuaciones.cpp.s
+.PHONY : sistemaEcuaciones.s
+
+# target to generate assembly for a file
+sistemaEcuaciones.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ejecutable.dir/build.make CMakeFiles/ejecutable.dir/sistemaEcuaciones.cpp.s
+.PHONY : sistemaEcuaciones.cpp.s
+
 tiempos.o: tiempos.cpp.o
 .PHONY : tiempos.o
 
@@ -258,9 +282,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ejecutable"
-	@echo "... ClaseTiempo.o"
-	@echo "... ClaseTiempo.i"
-	@echo "... ClaseTiempo.s"
+	@echo "... ajustes.o"
+	@echo "... ajustes.i"
+	@echo "... ajustes.s"
 	@echo "... func_seleccion.o"
 	@echo "... func_seleccion.i"
 	@echo "... func_seleccion.s"
@@ -270,6 +294,9 @@ help:
 	@echo "... metodos.o"
 	@echo "... metodos.i"
 	@echo "... metodos.s"
+	@echo "... sistemaEcuaciones.o"
+	@echo "... sistemaEcuaciones.i"
+	@echo "... sistemaEcuaciones.s"
 	@echo "... tiempos.o"
 	@echo "... tiempos.i"
 	@echo "... tiempos.s"

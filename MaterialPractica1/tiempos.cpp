@@ -1,7 +1,8 @@
 #include "tiempos.hpp"
 #include "func_seleccion.hpp"
-#include "ClaseTiempo.cpp"
+#include "ClaseTiempo.hpp"
 #include <iostream>
+#include <cmath>
 
 void tiemposOrdenacionSeleccion(int nMin, int nMax, int repeticiones, int incremento, vector<double> &tiemposReales, vector<double> &numeroElementos){
     Clock time;
@@ -22,5 +23,15 @@ void tiemposOrdenacionSeleccion(int nMin, int nMax, int repeticiones, int increm
         }
         tiemposReales[it] /= repeticiones;
         it++;
+    }
+}
+
+void calcularTiemposEstimadosPolinomico(const vector <double> &numeroElementos, const vector <double> &a, vector <double> &tiemposEstimados){
+    for(int i = 0; i < numeroElementos.size(); i++){
+        double aux = 0;
+        for(int j = 0; j < a.size(); j++){
+            aux += a[j]*pow(numeroElementos[i], j);
+        }
+        tiemposEstimados.push_back(aux);
     }
 }
