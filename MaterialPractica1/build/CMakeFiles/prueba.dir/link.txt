@@ -1,1 +1,0 @@
-/usr/bin/c++ -g -rdynamic CMakeFiles/prueba.dir/main.cpp.o CMakeFiles/prueba.dir/func_seleccion.cpp.o CMakeFiles/prueba.dir/metodos.cpp.o CMakeFiles/prueba.dir/tiempos.cpp.o CMakeFiles/prueba.dir/ClaseTiempo.cpp.o -o prueba 
