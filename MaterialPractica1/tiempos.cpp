@@ -1,5 +1,6 @@
 #include "tiempos.hpp"
-#include "func_seleccion.hpp"
+#include "func_aux.hpp"
+#include "metodos.hpp"
 #include "ClaseTiempo.hpp"
 #include <iostream>
 #include <cmath>

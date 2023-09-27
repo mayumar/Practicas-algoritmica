@@ -4,10 +4,7 @@
 #include <vector>
 using namespace std;
 
-    void ordenacionSeleccion();
-    void matrizCuadrado();
-    void fibonacciRecursivo();
-
-    void const exportarDatos(const std::vector<double> &tiemposReales, const std::vector<double> &numeroElementos);
+    void ordenacionSeleccion(vector<int>&v);
+    bool estaOrdenado(const vector<int> &v);
 
 #endif

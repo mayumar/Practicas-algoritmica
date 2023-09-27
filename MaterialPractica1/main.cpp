@@ -1,5 +1,5 @@
 #include <iostream>
-#include "metodos.hpp"
+#include "medio_nivel.hpp"
 
 using namespace std;
 

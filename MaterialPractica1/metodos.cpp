@@ -1,73 +1,30 @@
 #include "metodos.hpp"
-#include "func_seleccion.hpp"
-#include "tiempos.hpp"
-#include "ajustes.hpp"
-#include <iostream>
-#include <fstream>
 
-void ordenacionSeleccion(){
-    //pedir nMin, nMax, inc, rep
-    //declarar vectores nElementos, TReales, TEstimados
-    /*calcularTiemposOrdSeleccion(nMin, nMax, inc, rep, nElementos, TReales){
-        for(i = nMin; i <= nMax; ...){
-            declarar vector i elementos
-            rellenar vector
-            medir tiempo
-            ordenar
-            medir tiempo
-            guardar t en TReales
-            guardar n en NElementos
+void ordenacionSeleccion(vector<int>&v){
+    for(int i = 0; i < v.size()-1; i++){
+        int min_pos = i;
+        for(int j = i+1; j < v.size(); j++){
+            if(v[j] < v[min_pos]){
+                min_pos = j;
+            }
         }
+
+        int aux = v[i];
+        v[i] = v[min_pos];
+        v[min_pos] = aux;
     }
-    */
-
-    int nMin, nMax, inc, rep;
-    vector<double> tiemposReales, numeroElementos, a(3), tiemposEstimados;
-
-
-    cout << "Introduzca el numero minimo de elementos: ";
-    cin >> nMin;
-    cout << endl;
-
-    cout << "Introduzca el numero maximo de elementos: ";
-    cin >> nMax;
-    cout << endl;
-
-    cout << "Introduzca el incremento del numero de elementos: ";
-    cin >> inc;
-    cout << endl;
-
-    cout << "Introduzca el numero de repeticiones: ";
-    cin >> rep;
-    cout << endl;
-
-
-
-    tiemposOrdenacionSeleccion(nMin, nMax, rep, inc, tiemposReales, numeroElementos);    
-    exportarDatos(tiemposReales, numeroElementos);
-    ajusteCuadratico(numeroElementos, tiemposReales, a);
-    calcularTiemposEstimadosPolinomico(numeroElementos, a, tiemposEstimados);
-
-    cout << endl;
-    imprimirVector(tiemposEstimados);
-    cout << endl;
-
-
 }
 
-void matrizCuadrado(){
-
-}
-void fibonacciRecursivo(){
-
-}
-
-void const exportarDatos(const vector<double> &tiemposReales, const vector<double> &numeroElementos){
-    ofstream file("tiemposReales.txt");
+bool estaOrdenado(const vector<int> &v){
     
-    for(auto i = 0; i != numeroElementos.size(); i++){
-        file << numeroElementos[i] << " " << tiemposReales[i] << endl;
+    for(int i = 0; i < v.size()-1; i++){
+
+        int j = i+1;
+        if(v[j] < v[i]){
+            return false;
+        }
+
     }
 
-    file.close();
+    return true;
 }
