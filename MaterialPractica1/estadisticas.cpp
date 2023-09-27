@@ -31,6 +31,31 @@ void ajusteCuadratico(const vector <double> &numeroElementos, const vector <doub
     }
 }
 
+double media(const vector <double> &v){
+    double sum = 0;
+
+    for(int i = 0; i < v.size(); i++){
+        sum += v[i];
+    }
+
+    return (sum/v.size());
+}
+
+double varianza(const vector <double> &v){
+    double sum = 0;
+    double med = media(v);
+    
+    for(int i = 0; i < v.size(); i++){
+        sum += ((v[i] - med) * (v[i] - med));
+    }
+
+    return (sum/(v.size()-1));
+}
+
 double calcularCoeficienteDeterminacion(const vector <double> &tiemposReales, const vector <double> &tiemposEstimados){
-    return 0;
+    
+    double var_reales = varianza(tiemposReales);
+    double var_estimados = varianza(tiemposEstimados);
+
+    return (var_reales/var_estimados);
 }

@@ -38,9 +38,7 @@ void ordenacionSeleccion(){
     ajusteCuadratico(numeroElementos, tiemposReales, a);
     calcularTiemposEstimadosPolinomico(numeroElementos, a, tiemposEstimados);
 
-    cout << endl;
-    imprimirVector(tiemposEstimados);
-    cout << endl;
+    double coef_det = calcularCoeficienteDeterminacion(tiemposReales, tiemposEstimados);
 
 
 }

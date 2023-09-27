@@ -8,4 +8,7 @@ using namespace std;
 
     double calcularCoeficienteDeterminacion(const vector <double> &tiemposReales, const vector <double> &tiemposEstimados);
 
+    double media(const vector <double> &v);
+    double varianza(const vector <double> &v);
+
 #endif
