@@ -21,13 +21,15 @@ void tiemposOrdenacionSeleccion(int nMin, int nMax, int repeticiones, int increm
             ordenacionSeleccion(v);
             time.stop();
             tiemposReales[it] += time.elapsed();
-            cout << "Vector de " << i << " elementos, repeticion numero " << j+1 << ": " << time.elapsed() << " microsegundos" << endl;
         }
-
-        cout << endl;
         tiemposReales[it] /= repeticiones;
         it++;
+
+        cout << "Vector de " << i << " elementos: " << time.elapsed() << " microsegundos" << endl;
+
     }
+
+    cout << endl;
 }
 
 void calcularTiemposEstimadosPolinomico(const vector <double> &numeroElementos, const vector <double> &a, vector <double> &tiemposEstimados){

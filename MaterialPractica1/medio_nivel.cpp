@@ -12,7 +12,7 @@ using namespace std;
 void ordenacionSeleccion(){
 
     int nMin, nMax, inc, rep;
-    long nEl;
+    long nEl = -1;
     double t;
     vector<double> tiemposReales, numeroElementos, a(3), tiemposEstimados;
 
@@ -46,19 +46,23 @@ void ordenacionSeleccion(){
 
     cout << "Coeficiente de determinacion: " << coef_det << endl << endl;
 
-    cout << "Introduzca numero de elementos para calcular tiempo estimado: ";
-    cin >> nEl;
-    cout << endl;
+    while(nEl != 0){
+        cout << "Introduzca numero de elementos para calcular tiempo estimado (0 para salir): ";
+        cin >> nEl;
+        cout << endl;
 
-    t = calcularTiempoEstimadoPolinomico(nEl, a);
+        t = calcularTiempoEstimadoPolinomico(nEl, a);
 
-    float seg = t/1000000;
-    int min = seg/60;
-    int hours = min/60;
-    int days = hours/24;
-    int years = days/365;
+        float seg = t/1000000;
+        int min = seg/60;
+        int hours = min/60;
+        int days = hours/24;
+        int years = days/365;
 
-    cout << "Para " << nEl << " elementos, tardara " << years << " años, " << days << " dias, " << hours << " horas, " << min << " minutos, " << seg << " segundos" << endl << endl;
+        cout << "Para " << nEl << " elementos, tardara " << years << " años, " << days << " dias, "
+             << hours << " horas, " << min << " minutos, " << seg << " segundos" << endl << endl;
+    }
+    
 
 
 }
