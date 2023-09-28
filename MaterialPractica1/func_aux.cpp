@@ -16,7 +16,7 @@ void imprimirVector(const vector<double> &v){
     
 }
 
-void const exportarDatos(const vector<double> &tiemposReales, const vector<double> &numeroElementos){
+void const exportarDatosReales(const vector<double> &tiemposReales, const vector<double> &numeroElementos){
     ofstream file("tiemposReales.txt");
     
     for(auto i = 0; i != numeroElementos.size(); i++){
@@ -25,6 +25,17 @@ void const exportarDatos(const vector<double> &tiemposReales, const vector<doubl
 
     file.close();
 }
+
+void const exportarDatosFinales(const vector<double> &tiemposReales, const vector<double> &numeroElementos, const vector<double> &tiemposEstimados){
+    ofstream file("tiemposFinales.txt");
+    
+    for(auto i = 0; i != numeroElementos.size(); i++){
+        file << numeroElementos[i] << " " << tiemposReales[i] << " " << tiemposEstimados[i] << endl;
+    }
+
+    file.close();
+}
+
 
 void imprimirMatriz(vector<vector<double>> &m){
     cout << endl;

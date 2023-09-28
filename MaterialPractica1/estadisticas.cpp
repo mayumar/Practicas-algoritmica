@@ -57,5 +57,5 @@ double calcularCoeficienteDeterminacion(const vector <double> &tiemposReales, co
     double var_reales = varianza(tiemposReales);
     double var_estimados = varianza(tiemposEstimados);
 
-    return (var_reales/var_estimados);
+    return (var_estimados/var_reales);
 }

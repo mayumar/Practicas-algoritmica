@@ -10,6 +10,8 @@ using namespace std;
 
     double sumatorio(const vector <double> &n, const vector <double> &t, int expN, int expT);
     
-    void const exportarDatos(const vector<double> &tiemposReales, const vector<double> &numeroElementos);
+    void const exportarDatosReales(const vector<double> &tiemposReales, const vector<double> &numeroElementos);
+
+    void const exportarDatosFinales(const vector<double> &tiemposReales, const vector<double> &numeroElementos, const vector<double> &tiemposEstimados);
 
 #endif

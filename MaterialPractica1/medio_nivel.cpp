@@ -12,6 +12,8 @@ using namespace std;
 void ordenacionSeleccion(){
 
     int nMin, nMax, inc, rep;
+    long nEl;
+    double t;
     vector<double> tiemposReales, numeroElementos, a(3), tiemposEstimados;
 
 
@@ -34,11 +36,29 @@ void ordenacionSeleccion(){
 
 
     tiemposOrdenacionSeleccion(nMin, nMax, rep, inc, tiemposReales, numeroElementos);    
-    exportarDatos(tiemposReales, numeroElementos);
+    exportarDatosReales(tiemposReales, numeroElementos);
     ajusteCuadratico(numeroElementos, tiemposReales, a);
     calcularTiemposEstimadosPolinomico(numeroElementos, a, tiemposEstimados);
 
     double coef_det = calcularCoeficienteDeterminacion(tiemposReales, tiemposEstimados);
+
+    exportarDatosFinales(tiemposReales, numeroElementos, tiemposEstimados);
+
+    cout << "Coeficiente de determinacion: " << coef_det << endl << endl;
+
+    cout << "Introduzca numero de elementos para calcular tiempo estimado: ";
+    cin >> nEl;
+    cout << endl;
+
+    t = calcularTiempoEstimadoPolinomico(nEl, a);
+
+    float seg = t/1000000;
+    int min = seg/60;
+    int hours = min/60;
+    int days = hours/24;
+    int years = days/365;
+
+    cout << "Para " << nEl << " elementos, tardara " << years << " años, " << days << " dias, " << hours << " horas, " << min << " minutos, " << seg << " segundos" << endl << endl;
 
 
 }

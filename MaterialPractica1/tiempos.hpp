@@ -5,10 +5,9 @@
 
 using namespace std;
 
-    void tiemposOrdenacionSeleccion(int nMin, int nMax, int repeticiones,
-                                    int incremento, vector<double> &tiemposReales,
-                                    vector<double> &numeroElementos);
+    void tiemposOrdenacionSeleccion(int nMin, int nMax, int repeticiones, int incremento, vector<double> &tiemposReales, vector<double> &numeroElementos);
 
     void calcularTiemposEstimadosPolinomico(const vector <double> &numeroElementos, const vector <double> &a, vector <double> &tiemposEstimados);
+    double calcularTiempoEstimadoPolinomico(const double &n, vector<double> &a);
 
 #endif
