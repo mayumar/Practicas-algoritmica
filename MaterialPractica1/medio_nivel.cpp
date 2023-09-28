@@ -33,8 +33,6 @@ void ordenacionSeleccion(){
     cin >> rep;
     cout << endl;
 
-
-
     tiemposOrdenacionSeleccion(nMin, nMax, rep, inc, tiemposReales, numeroElementos);    
     exportarDatosReales(tiemposReales, numeroElementos);
     ajusteCuadratico(numeroElementos, tiemposReales, a);
@@ -63,12 +61,46 @@ void ordenacionSeleccion(){
              << hours << " horas, " << min << " minutos, " << seg << " segundos" << endl << endl;
     }
     
-
-
 }
 
 void matrizCuadrado(){
+    int nMin, nMax, inc;
+    vector<double> tiemposReales, ordenes;
+    /*
+    int opt = 0, n;
 
+    cout << "Introduzca el orden de las matrices: ";
+    cin >> n;
+
+    vector<vector<double>> m = vector<vector<double>>(n, vector<double>(n));
+    
+    while(opt < 1 || opt > 2){
+        cout << "Elija una opcion para rellenar las matrices(esta eleccion no hace nada): " << endl;
+        cout << "1) Manualmente" << endl;
+        cout << "2) Aleatoriamente" << endl;
+        cout << "> ";
+        cin >> opt;
+
+        if(opt < 1 || opt > 2){
+            cout << "Error, opcion incorrecta" << endl;
+        }
+    }
+    */
+
+    cout << "Introduzca el orden minimo de las matrices: ";
+    cin >> nMin;
+    cout << endl;
+
+    cout << "Introduzca el orden maximo de las matrices: ";
+    cin >> nMax;
+    cout << endl;
+
+    cout << "Introduzca el incremento del orden de las matrices: ";
+    cin >> inc;
+    cout << endl;
+
+    tiemposMatrizCuadrado(nMin, nMax, inc, tiemposReales, ordenes);
+    
 }
 void fibonacciRecursivo(){
 

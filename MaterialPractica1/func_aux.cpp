@@ -8,12 +8,42 @@ void rellenarVector(vector<int> &v){
     }
 }
 
+void rellenarMatrizManual(vector<vector<double>> &m){
+    cout << "Introduzca los distintos elementos de la matriz: " << endl;
+
+    for(int i = 0; i < m.size(); i++){
+        for(int j = 0; j < m[i].size(); j++){
+            cout << "Elemento (" << i << "," << j << "): ";
+            cin >> m[i][j];
+        }
+    }
+}
+
+void rellenarMatrizAleatoria(vector<vector<double>> &m){
+    for(int i = 0; i < m.size(); i++){
+        for(int j = 0; j < m[i].size(); j++){
+            m[i][j] = drand48() * (1.05-0.95)+0.95;
+        }
+    }
+}
+
 void imprimirVector(const vector<double> &v){
     
     for(int i = 0; i < v.size(); i++){
         cout << v[i] << " ";
     }
     
+}
+
+void imprimirMatriz(vector<vector<double>> &m){
+    cout << endl;
+    for(int i = 0; i < m.size(); i++){
+        for(int j = 0; j < m[i].size(); j++){
+            cout << m[i][j] << " ";
+        }
+        cout << endl;
+    }
+    cout << endl;
 }
 
 void const exportarDatosReales(const vector<double> &tiemposReales, const vector<double> &numeroElementos){
@@ -34,18 +64,6 @@ void const exportarDatosFinales(const vector<double> &tiemposReales, const vecto
     }
 
     file.close();
-}
-
-
-void imprimirMatriz(vector<vector<double>> &m){
-    cout << endl;
-    for(int i = 0; i < m.size(); i++){
-        for(int j = 0; j < m[i].size(); j++){
-            cout << m[i][j] << " ";
-        }
-        cout << endl;
-    }
-    cout << endl;
 }
 
 double sumatorio(const vector <double> &n, const vector <double> &t, int expN, int expT){

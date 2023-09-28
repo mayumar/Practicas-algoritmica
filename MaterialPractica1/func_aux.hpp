@@ -5,13 +5,14 @@
 using namespace std;
 
     void rellenarVector(vector<int> &v);
+    void rellenarMatrizManual(vector<vector<double>> &m);
+    void rellenarMatrizAleatoria(vector<vector<double>> &m);
     void imprimirVector(const vector<double> &v);
     void imprimirMatriz(vector<vector<double>> &m);
 
     double sumatorio(const vector <double> &n, const vector <double> &t, int expN, int expT);
     
     void const exportarDatosReales(const vector<double> &tiemposReales, const vector<double> &numeroElementos);
-
     void const exportarDatosFinales(const vector<double> &tiemposReales, const vector<double> &numeroElementos, const vector<double> &tiemposEstimados);
 
 #endif

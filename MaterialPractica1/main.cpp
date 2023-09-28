@@ -6,6 +6,7 @@ using namespace std;
 int main(){
     int opt = -1;
     srand(time(0));
+    srand48(time(0));
 
     while(opt != 4){
         cout << "Elija una opcion:" << endl;
@@ -17,7 +18,7 @@ int main(){
         cin >> opt;
 
         if(opt < 1 || opt > 4){
-            cout << "Error, elija una opcion correcta" << endl;
+            cout << "Error, opcion incorrecta" << endl;
         }
 
         cout << endl;
