@@ -65,24 +65,3 @@ void const exportarDatosFinales(const vector<double> &tiemposReales, const vecto
 
     file.close();
 }
-
-double sumatorio(const vector <double> &n, const vector <double> &t, int expN, int expT){
-    double multn, multt, sum = 0;
-
-    for(int i = 0; i < n.size(); i++){
-        multn = 1;
-        multt = 1;
-
-        for(int j = 0; j < expN; j++){
-            multn *= n[i];
-        }
-
-        for(int j = 0; j < expT; j++){
-            multt *= t[i];
-        }
-
-        sum += (multn*multt);
-    }
-
-    return sum;
-}

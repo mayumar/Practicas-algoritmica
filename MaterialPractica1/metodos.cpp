@@ -28,3 +28,11 @@ bool estaOrdenado(const vector<int> &v){
 
     return true;
 }
+
+int fibonnaciRecursivo(int n){
+    if(n <= 2){
+        return (n-1);
+    }else{
+        return (fibonnaciRecursivo(n-1) + fibonnaciRecursivo(n-2));
+    }
+}

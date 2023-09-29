@@ -129,8 +129,25 @@ void matrizCuadrado(){
              << hours << " horas, " << min << " minutos, " << seg << " segundos" << endl << endl;
     }
     
-    
 }
-void fibonacciRecursivo(){
 
+void fibonacciRecursivo(){
+    int nMin, nMax, inc;
+    vector<double> tiemposReales, numeroElementos, a(2);
+
+    cout << "Introduzca el numero minimo de elementos: ";
+    cin >> nMin;
+    cout << endl;
+
+    cout << "Introduzca el numero maximo de elementos: ";
+    cin >> nMax;
+    cout << endl;
+
+    cout << "Introduzca el incremento del numero de elementos: ";
+    cin >> inc;
+    cout << endl;
+
+    tiemposFibonacciRecursivo(nMin, nMax, inc, tiemposReales, numeroElementos);
+    exportarDatosReales(tiemposReales, numeroElementos);
+    ajusteExponencial(numeroElementos, tiemposReales, a);
 }

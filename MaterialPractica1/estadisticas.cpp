@@ -35,6 +35,38 @@ void ajusteCubico(const vector <double> &n, const vector <double> &tiemposReales
     ajusteCuadratico(n, tiemposReales, a);
 }
 
+void ajusteExponencial(const vector <double> &n, const vector <double> &tiemposReales, vector <double> &a){
+    vector<double> cambioV(tiemposReales.size());
+
+    for(int i = 0; i < tiemposReales.size(); i++){
+        cambioV[i] = pow(2, n[i]);
+    }
+
+    ajusteCuadratico(cambioV, tiemposReales, a);
+
+}
+
+double sumatorio(const vector <double> &n, const vector <double> &t, int expN, int expT){
+    double multn, multt, sum = 0;
+
+    for(int i = 0; i < n.size(); i++){
+        multn = 1;
+        multt = 1;
+
+        for(int j = 0; j < expN; j++){
+            multn *= n[i];
+        }
+
+        for(int j = 0; j < expT; j++){
+            multt *= t[i];
+        }
+
+        sum += (multn*multt);
+    }
+
+    return sum;
+}
+
 double media(const vector <double> &v){
     double sum = 0;
 

@@ -55,6 +55,24 @@ void tiemposMatrizCuadrado(int nMin, int nMax, int incremento, vector<double> &t
     cout << endl;
 }
 
+void tiemposFibonacciRecursivo(int nMin, int nMax, int incremento, vector<double> &tiemposReales, vector<double> &numeroElementos){
+    Clock time;
+
+    for(int i = nMin; i <= nMax; i += incremento){
+        time.start();
+        fibonnaciRecursivo(i);
+        if(time.isStarted()){
+            time.stop();
+        }
+        tiemposReales.push_back(time.elapsed());
+        numeroElementos.push_back(i);
+
+        cout << "Termino " << i << "-esimo: " << time.elapsed() << " microsegundos" << endl;
+    }
+
+    cout << endl;
+}
+
 void calcularTiemposEstimadosPolinomico(const vector <double> &numeroElementos, const vector <double> &a, vector <double> &tiemposEstimados){
     for(int i = 0; i < numeroElementos.size(); i++){
         double aux = 0;
@@ -73,4 +91,8 @@ double calcularTiempoEstimadoPolinomico(const double &n, vector<double> &a){
     }
         
     return res;
+}
+
+void calcularTiemposEstimadosExponencial(const vector<double> &n, const vector<double> &tiemposReales, const vector<double> &a, vector<double> &tiemposEstimaos){
+    
 }
