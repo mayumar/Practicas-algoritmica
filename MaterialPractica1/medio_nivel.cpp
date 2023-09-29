@@ -65,7 +65,9 @@ void ordenacionSeleccion(){
 
 void matrizCuadrado(){
     int nMin, nMax, inc;
-    vector<double> tiemposReales, ordenes;
+    long orden;
+    double t;
+    vector<double> tiemposReales, ordenes, a(4), tiemposEstimados;
     /*
     int opt = 0, n;
 
@@ -100,6 +102,33 @@ void matrizCuadrado(){
     cout << endl;
 
     tiemposMatrizCuadrado(nMin, nMax, inc, tiemposReales, ordenes);
+    exportarDatosReales(tiemposReales, ordenes);
+    ajusteCubico(ordenes, tiemposReales, a);
+    calcularTiemposEstimadosPolinomico(ordenes, a, tiemposEstimados);
+
+    double coef_det = calcularCoeficienteDeterminacion(tiemposReales, tiemposEstimados);
+
+    exportarDatosFinales(tiemposReales, ordenes, tiemposEstimados);
+
+    cout << "Coeficiente de determinacion: " << coef_det << endl << endl;
+
+    while(orden != 0){
+        cout << "Introduzca orden de la matriz para calcular tiempo estimado (0 para salir): ";
+        cin >> orden;
+        cout << endl;
+
+        t = calcularTiempoEstimadoPolinomico(orden, a);
+
+        float seg = t/1000000;
+        int min = seg/60;
+        int hours = min/60;
+        int days = hours/24;
+        int years = days/365;
+
+        cout << "Para el orden " << orden << ", tardara " << years << " años, " << days << " dias, "
+             << hours << " horas, " << min << " minutos, " << seg << " segundos" << endl << endl;
+    }
+    
     
 }
 void fibonacciRecursivo(){

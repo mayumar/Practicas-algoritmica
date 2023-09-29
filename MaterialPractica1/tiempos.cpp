@@ -2,28 +2,29 @@
 #include "func_aux.hpp"
 #include "metodos.hpp"
 #include "ClaseTiempo.hpp"
+#include "sistemaEcuaciones.hpp"
 #include <iostream>
 #include <cmath>
 
 void tiemposOrdenacionSeleccion(int nMin, int nMax, int repeticiones, int incremento, vector<double> &tiemposReales, vector<double> &numeroElementos){
     Clock time;
-    int it = 0;
+    int aux;
 
     for(int i = nMin; i <= nMax; i += incremento){
         vector<int> v(i);
-
-        numeroElementos.push_back(i);
-        tiemposReales.push_back(0);
+        aux = 0;
 
         for(int j = 0; j < repeticiones; j++){
             rellenarVector(v);
             time.start();
             ordenacionSeleccion(v);
-            time.stop();
-            tiemposReales[it] += time.elapsed();
+            if(time.isStarted()){
+                time.stop();
+            }
+            aux += time.elapsed();
         }
-        tiemposReales[it] /= repeticiones;
-        it++;
+        tiemposReales.push_back(aux/repeticiones);
+        numeroElementos.push_back(i);
 
         cout << "Vector de " << i << " elementos: " << time.elapsed() << " microsegundos" << endl;
 
@@ -33,7 +34,25 @@ void tiemposOrdenacionSeleccion(int nMin, int nMax, int repeticiones, int increm
 }
 
 void tiemposMatrizCuadrado(int nMin, int nMax, int incremento, vector<double> &tiemposReales, vector<double> &ordenes){
-    
+    Clock time;
+
+    for(int i = nMin; i <= nMax; i += incremento){
+        vector<vector<double>> m1 = vector<vector<double>>(i, vector<double>(i));
+        vector<vector<double>> mres = vector<vector<double>>(i, vector<double>(i));
+        rellenarMatrizAleatoria(m1);
+
+        time.start();
+        multiplicarMatrices(m1, m1, mres);
+        if(time.isStarted()){
+            time.stop();
+        }
+        tiemposReales.push_back(time.elapsed());
+        ordenes.push_back(i);
+        
+        cout << "Matriz de orden " << i << ": " << time.elapsed() << " microsegundos" << endl;
+    }
+
+    cout << endl;
 }
 
 void calcularTiemposEstimadosPolinomico(const vector <double> &numeroElementos, const vector <double> &a, vector <double> &tiemposEstimados){

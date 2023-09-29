@@ -31,6 +31,10 @@ void ajusteCuadratico(const vector <double> &numeroElementos, const vector <doub
     }
 }
 
+void ajusteCubico(const vector <double> &n, const vector <double> &tiemposReales, vector <double> &a){
+    ajusteCuadratico(n, tiemposReales, a);
+}
+
 double media(const vector <double> &v){
     double sum = 0;
 
