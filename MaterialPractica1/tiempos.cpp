@@ -93,6 +93,14 @@ double calcularTiempoEstimadoPolinomico(const double &n, vector<double> &a){
     return res;
 }
 
-void calcularTiemposEstimadosExponencial(const vector<double> &n, const vector<double> &tiemposReales, const vector<double> &a, vector<double> &tiemposEstimaos){
-    
+void calcularTiemposEstimadosExponencial(const vector<double> &n, const vector<double> &tiemposReales, const vector<double> &a, vector<double> &tiemposEstimados){
+    for(int i = 0; i < n.size(); i++){
+        double aux = a[0] + (a[1] * pow(2, n[i]));
+        tiemposEstimados.push_back(aux);
+    }
 }
+
+double calcularTiempoEstimadoExponencial(const double &n, const vector<double> &a){
+    return (a[0] + (a[1] * pow(2, n)));
+}
+

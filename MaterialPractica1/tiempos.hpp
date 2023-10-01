@@ -11,6 +11,7 @@ using namespace std;
 
     void calcularTiemposEstimadosPolinomico(const vector <double> &numeroElementos, const vector <double> &a, vector <double> &tiemposEstimados);
     double calcularTiempoEstimadoPolinomico(const double &n, vector<double> &a);
-    void calcularTiemposEstimadosExponencial(const vector<double> &n, const vector<double> &tiemposReales, const vector<double> &a, vector<double> &tiemposEstimaos);
+    void calcularTiemposEstimadosExponencial(const vector<double> &n, const vector<double> &tiemposReales, const vector<double> &a, vector<double> &tiemposEstimados);
+    double calcularTiempoEstimadoExponencial(const double &n, const vector<double> &a);
 
 #endif

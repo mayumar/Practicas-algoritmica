@@ -133,7 +133,9 @@ void matrizCuadrado(){
 
 void fibonacciRecursivo(){
     int nMin, nMax, inc;
-    vector<double> tiemposReales, numeroElementos, a(2);
+    long nEl;
+    double t;
+    vector<double> tiemposReales, numeroElementos, tiemposEstimados, a(2);
 
     cout << "Introduzca el numero minimo de elementos: ";
     cin >> nMin;
@@ -150,4 +152,28 @@ void fibonacciRecursivo(){
     tiemposFibonacciRecursivo(nMin, nMax, inc, tiemposReales, numeroElementos);
     exportarDatosReales(tiemposReales, numeroElementos);
     ajusteExponencial(numeroElementos, tiemposReales, a);
+    calcularTiemposEstimadosExponencial(numeroElementos, tiemposReales, a, tiemposEstimados);
+
+    double coef_det = calcularCoeficienteDeterminacion(tiemposReales, tiemposEstimados);
+
+    exportarDatosFinales(tiemposReales, numeroElementos, tiemposEstimados);
+
+    cout << "Coeficiente de determinacion: " << coef_det << endl << endl;
+
+    while(nEl != 0){
+        cout << "Introduzca numero de elementos para calcular tiempo estimado (0 para salir): ";
+        cin >> nEl;
+        cout << endl;
+
+        t = calcularTiempoEstimadoExponencial(nEl, a);
+
+        float seg = t/1000000;
+        int min = seg/60;
+        int hours = min/60;
+        int days = hours/24;
+        int years = days/365;
+
+        cout << "Para el termino " << nEl << "-esimo, tardara " << years << " años, " << days << " dias, "
+             << hours << " horas, " << min << " minutos, " << seg << " segundos" << endl << endl;
+    }
 }
