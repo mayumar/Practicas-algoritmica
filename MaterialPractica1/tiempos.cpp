@@ -26,7 +26,7 @@ void tiemposOrdenacionSeleccion(int nMin, int nMax, int repeticiones, int increm
         tiemposReales.push_back(aux/repeticiones);
         numeroElementos.push_back(i);
 
-        cout << "Vector de " << i << " elementos: " << time.elapsed() << " microsegundos" << endl;
+        cout << "Vector de " << i << " elementos: " << aux << " microsegundos" << endl;
 
     }
 
@@ -102,5 +102,20 @@ void calcularTiemposEstimadosExponencial(const vector<double> &n, const vector<d
 
 double calcularTiempoEstimadoExponencial(const double &n, const vector<double> &a){
     return (a[0] + (a[1] * pow(2, n)));
+}
+
+void tiempoEstimadoCompleto(double t, long n){
+    long seg = t/1000000;
+    long min = seg/60;
+    seg = seg%60;
+    long hours = min/60;
+    min = min%60;
+    long days = hours/24;
+    hours = hours%24;
+    long years = days/365;
+    days = days%60;
+
+    cout << "Para n = " << n << ", tardara " << years << " años, " << days << " dias, "
+            << hours << " horas, " << min << " minutos, " << seg << " segundos" << endl << endl;
 }
 

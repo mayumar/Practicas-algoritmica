@@ -42,6 +42,9 @@ void ordenacionSeleccion(){
 
     exportarDatosFinales(tiemposReales, numeroElementos, tiemposEstimados);
 
+    cout << "Funcion de curva estimada: ";
+    cout << "f(n) = " << a[0] << " + " << a[1] << "*n + " << a[2] << "*n²" << endl;
+
     cout << "Coeficiente de determinacion: " << coef_det << endl << endl;
 
     while(nEl != 0){
@@ -49,16 +52,10 @@ void ordenacionSeleccion(){
         cin >> nEl;
         cout << endl;
 
-        t = calcularTiempoEstimadoPolinomico(nEl, a);
-
-        float seg = t/1000000;
-        int min = seg/60;
-        int hours = min/60;
-        int days = hours/24;
-        int years = days/365;
-
-        cout << "Para " << nEl << " elementos, tardara " << years << " años, " << days << " dias, "
-             << hours << " horas, " << min << " minutos, " << seg << " segundos" << endl << endl;
+        if(nEl != 0){
+            t = calcularTiempoEstimadoPolinomico(nEl, a);
+            tiempoEstimadoCompleto(t, nEl);
+        }
     }
     
 }
@@ -110,6 +107,9 @@ void matrizCuadrado(){
 
     exportarDatosFinales(tiemposReales, ordenes, tiemposEstimados);
 
+    cout << "Funcion de curva estimada: ";
+    cout << "f(n) = " << a[0] << " + " << a[1] << "*n + " << a[2] << "*n² + " << a[3] << "*n³" << endl;
+
     cout << "Coeficiente de determinacion: " << coef_det << endl << endl;
 
     while(orden != 0){
@@ -117,16 +117,10 @@ void matrizCuadrado(){
         cin >> orden;
         cout << endl;
 
-        t = calcularTiempoEstimadoPolinomico(orden, a);
-
-        float seg = t/1000000;
-        int min = seg/60;
-        int hours = min/60;
-        int days = hours/24;
-        int years = days/365;
-
-        cout << "Para el orden " << orden << ", tardara " << years << " años, " << days << " dias, "
-             << hours << " horas, " << min << " minutos, " << seg << " segundos" << endl << endl;
+        if(orden != 0){
+            t = calcularTiempoEstimadoPolinomico(orden, a);
+            tiempoEstimadoCompleto(t, orden);
+        }
     }
     
 }
@@ -158,6 +152,9 @@ void fibonacciRecursivo(){
 
     exportarDatosFinales(tiemposReales, numeroElementos, tiemposEstimados);
 
+    cout << "Funcion de curva estimada: ";
+    cout << "f(n) = " << a[0] << " + " << a[1] << "*2^n" << endl;
+
     cout << "Coeficiente de determinacion: " << coef_det << endl << endl;
 
     while(nEl != 0){
@@ -165,15 +162,9 @@ void fibonacciRecursivo(){
         cin >> nEl;
         cout << endl;
 
-        t = calcularTiempoEstimadoExponencial(nEl, a);
-
-        float seg = t/1000000;
-        int min = seg/60;
-        int hours = min/60;
-        int days = hours/24;
-        int years = days/365;
-
-        cout << "Para el termino " << nEl << "-esimo, tardara " << years << " años, " << days << " dias, "
-             << hours << " horas, " << min << " minutos, " << seg << " segundos" << endl << endl;
+        if(nEl != 0){
+            t = calcularTiempoEstimadoExponencial(nEl, a);
+            tiempoEstimadoCompleto(t, nEl);
+        }
     }
 }

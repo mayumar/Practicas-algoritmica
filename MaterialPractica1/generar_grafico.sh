@@ -7,5 +7,5 @@ set output "grafico.eps"
 set key right bottom
 set xlabel "Tamano del ejemplar"
 set ylabel "Tiempos"
-plot 'tiemposFinales.txt' using 1:2 t "Tiempos Reales" w l, 'tiemposFinales.txt' using 1:3 t "Tiempos Estimados" w l, 'tiemposFinales.txt' using 1:5 t "Datos columna 5 frente a 1" w l, 'tiemposFinales.txt' using 1:6 t "Datos columna 6 frente a 1" w l 
+plot 'tiemposFinales.txt' using 1:2 t "Tiempos Reales", 'tiemposFinales.txt' using 1:3 t "Tiempos Estimados" w l, 'tiemposFinales.txt' using 1:5 t "Datos columna 5 frente a 1" w l, 'tiemposFinales.txt' using 1:6 t "Datos columna 6 frente a 1" w l 
 _end_

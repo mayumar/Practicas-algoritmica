@@ -14,4 +14,6 @@ using namespace std;
     void calcularTiemposEstimadosExponencial(const vector<double> &n, const vector<double> &tiemposReales, const vector<double> &a, vector<double> &tiemposEstimados);
     double calcularTiempoEstimadoExponencial(const double &n, const vector<double> &a);
 
+    void tiempoEstimadoCompleto(double t, long n);
+
 #endif
