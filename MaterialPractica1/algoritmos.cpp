@@ -1,4 +1,4 @@
-#include "metodos.hpp"
+#include "algoritmos.hpp"
 
 void ordenacionSeleccion(vector<int>&v){
     for(int i = 0; i < v.size()-1; i++){

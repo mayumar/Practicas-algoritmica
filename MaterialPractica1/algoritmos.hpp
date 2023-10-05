@@ -1,5 +1,5 @@
-#ifndef METODOS_HPP
-#define METODOS_HPP
+#ifndef ALGORITMOS_HPP
+#define ALGORITMOS_HPP
 
 #include <vector>
 using namespace std;
