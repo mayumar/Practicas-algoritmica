@@ -13,8 +13,12 @@ int main(){
 
     quickSort(0, v.size()-1, v);
 
-    std::cout << "Vector ordenado:";
-    imprimirVector(v);
+    if(estaOrdenado(v)){
+        std::cout << "Vector ordenado:";
+        imprimirVector(v);
+    }else{
+        std::cout << "No esta ordenado" << std::endl;
+    }
 
     return 0;
 }
