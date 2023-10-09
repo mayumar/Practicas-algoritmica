@@ -1,0 +1,37 @@
+[
+{
+  "directory": "/home/mayumar/Escritorio/practicasalg/MaterialPractica1/build",
+  "command": "/usr/bin/c++   -g -o CMakeFiles/p1.exe.dir/main.cpp.o -c /home/mayumar/Escritorio/practicasalg/MaterialPractica1/main.cpp",
+  "file": "/home/mayumar/Escritorio/practicasalg/MaterialPractica1/main.cpp"
+},
+{
+  "directory": "/home/mayumar/Escritorio/practicasalg/MaterialPractica1/build",
+  "command": "/usr/bin/c++   -g -o CMakeFiles/p1.exe.dir/medio_nivel.cpp.o -c /home/mayumar/Escritorio/practicasalg/MaterialPractica1/medio_nivel.cpp",
+  "file": "/home/mayumar/Escritorio/practicasalg/MaterialPractica1/medio_nivel.cpp"
+},
+{
+  "directory": "/home/mayumar/Escritorio/practicasalg/MaterialPractica1/build",
+  "command": "/usr/bin/c++   -g -o CMakeFiles/p1.exe.dir/algoritmos.cpp.o -c /home/mayumar/Escritorio/practicasalg/MaterialPractica1/algoritmos.cpp",
+  "file": "/home/mayumar/Escritorio/practicasalg/MaterialPractica1/algoritmos.cpp"
+},
+{
+  "directory": "/home/mayumar/Escritorio/practicasalg/MaterialPractica1/build",
+  "command": "/usr/bin/c++   -g -o CMakeFiles/p1.exe.dir/func_aux.cpp.o -c /home/mayumar/Escritorio/practicasalg/MaterialPractica1/func_aux.cpp",
+  "file": "/home/mayumar/Escritorio/practicasalg/MaterialPractica1/func_aux.cpp"
+},
+{
+  "directory": "/home/mayumar/Escritorio/practicasalg/MaterialPractica1/build",
+  "command": "/usr/bin/c++   -g -o CMakeFiles/p1.exe.dir/estadisticas.cpp.o -c /home/mayumar/Escritorio/practicasalg/MaterialPractica1/estadisticas.cpp",
+  "file": "/home/mayumar/Escritorio/practicasalg/MaterialPractica1/estadisticas.cpp"
+},
+{
+  "directory": "/home/mayumar/Escritorio/practicasalg/MaterialPractica1/build",
+  "command": "/usr/bin/c++   -g -o CMakeFiles/p1.exe.dir/tiempos.cpp.o -c /home/mayumar/Escritorio/practicasalg/MaterialPractica1/tiempos.cpp",
+  "file": "/home/mayumar/Escritorio/practicasalg/MaterialPractica1/tiempos.cpp"
+},
+{
+  "directory": "/home/mayumar/Escritorio/practicasalg/MaterialPractica1/build",
+  "command": "/usr/bin/c++   -g -o CMakeFiles/p1.exe.dir/sistemaEcuaciones.cpp.o -c /home/mayumar/Escritorio/practicasalg/MaterialPractica1/sistemaEcuaciones.cpp",
+  "file": "/home/mayumar/Escritorio/practicasalg/MaterialPractica1/sistemaEcuaciones.cpp"
+}
+]

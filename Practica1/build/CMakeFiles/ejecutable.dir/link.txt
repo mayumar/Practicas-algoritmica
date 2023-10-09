@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -rdynamic CMakeFiles/ejecutable.dir/main.cpp.o CMakeFiles/ejecutable.dir/medio_nivel.cpp.o CMakeFiles/ejecutable.dir/metodos.cpp.o CMakeFiles/ejecutable.dir/func_aux.cpp.o CMakeFiles/ejecutable.dir/estadisticas.cpp.o CMakeFiles/ejecutable.dir/tiempos.cpp.o CMakeFiles/ejecutable.dir/sistemaEcuaciones.cpp.o -o ejecutable 

@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -rdynamic CMakeFiles/p1.exe.dir/main.cpp.o CMakeFiles/p1.exe.dir/medio_nivel.cpp.o CMakeFiles/p1.exe.dir/algoritmos.cpp.o CMakeFiles/p1.exe.dir/func_aux.cpp.o CMakeFiles/p1.exe.dir/estadisticas.cpp.o CMakeFiles/p1.exe.dir/tiempos.cpp.o CMakeFiles/p1.exe.dir/sistemaEcuaciones.cpp.o -o p1.exe 

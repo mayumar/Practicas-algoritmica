@@ -85,7 +85,7 @@ double varianza(const vector <double> &v){
         sum += ((v[i] - med) * (v[i] - med));
     }
 
-    return (sum/(v.size()-1));
+    return (sum/v.size());
 }
 
 double calcularCoeficienteDeterminacion(const vector <double> &tiemposReales, const vector <double> &tiemposEstimados){

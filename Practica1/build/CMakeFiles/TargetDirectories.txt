@@ -1,0 +1,3 @@
+/home/mayumar/Escritorio/practicasalg/MaterialPractica1/build/CMakeFiles/p1.exe.dir
+/home/mayumar/Escritorio/practicasalg/MaterialPractica1/build/CMakeFiles/edit_cache.dir
+/home/mayumar/Escritorio/practicasalg/MaterialPractica1/build/CMakeFiles/rebuild_cache.dir
