@@ -116,7 +116,7 @@ void tiempoEstimadoCompleto(double t, long n){
     seg = seg%60;
     min = min%60;
     hours = hours%24;
-    days = days%60;
+    days = days%365;
 
     cout << "Para n = " << n << ", tardara " << years << " años, " << days << " dias, "
             << hours << " horas, " << min << " minutos, " << seg << " segundos" << endl << endl;
