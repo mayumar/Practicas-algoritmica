@@ -1,9 +1,9 @@
 #include "algoritmos_p1.hpp"
 
-void ordenacionSeleccion(vector<int>&v){
-    for(int i = 0; i < v.size()-1; i++){
+void ordenacionSeleccion(vector<int>&v, int min, int max){
+    for(int i = min; i < max-1; i++){
         int min_pos = i;
-        for(int j = i+1; j < v.size(); j++){
+        for(int j = i+1; j < max; j++){
             if(v[j] < v[min_pos]){
                 min_pos = j;
             }

@@ -39,21 +39,16 @@ void quickSort(int iz, int de, std::vector<int> &v){
 void quickSortMejorado(int iz, int de, int med, int n, std::vector<int> &v){
     int i = iz;
     int j = de;
-    int x;
-    
-    if(v.size() < med){
-        x = v[(iz+de)/2];
-    }else{
-        std::vector<int> m;
 
-        for(int i = 0; i < n-1; i++){
-            m.push_back(v[i]);
-        }
+    if(v.size() > n){
+        int z = (iz+de)/2;
+        z -= med/2;
 
-        ordenacionSeleccion(m);
-
-        x = m[(n-1)/2];
+        ordenacionSeleccion(v, z, z+med);
     }
+
+    int x = v[(iz+de)/2];
+
 
     do{
         while(v[i] < x){

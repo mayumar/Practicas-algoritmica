@@ -57,6 +57,7 @@ int main(int argc, char** argv){
 
             case 'h':
                 cout << "Pedir ayuda es para debiles" << endl;
+                exit(EXIT_SUCCESS);
             break;
 
             case '?':

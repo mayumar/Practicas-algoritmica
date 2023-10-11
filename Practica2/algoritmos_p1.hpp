@@ -4,7 +4,7 @@
 #include <vector>
 using namespace std;
 
-    void ordenacionSeleccion(vector<int>&v);
+    void ordenacionSeleccion(vector<int>&v, int min, int max);
     bool estaOrdenado(const vector<int> &v);
     int fibonnaciRecursivo(int n);
 
