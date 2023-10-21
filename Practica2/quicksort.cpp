@@ -40,7 +40,7 @@ void quickSortMejorado(int iz, int de, int med, int n, std::vector<int> &v){
     int i = iz;
     int j = de;
 
-    if(v.size() > n){
+    if((de-iz) > n){
         int z = (iz+de)/2;
         z -= med/2;
 
