@@ -27,6 +27,9 @@ void comparacionVariantesQuicksort(int nmin, int nMax, int incremento, int repet
 
     aux2 /= numeroElementos.size();
 
-    cout << "Mejora: " << aux1/aux2 << endl;
+    cout << endl;
+    cout << "Tiempos medios: tQS1 = " << aux1 << " tQS2 = " << aux2 << endl;
+    cout << endl;
+    cout << "Mejora (tQS2/tQS1) =  " << aux2/aux1 << endl;
     
 }
