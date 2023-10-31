@@ -1,5 +1,5 @@
-#ifndef PROBLEMA_CAMBIO_HPP
-#define PROBELMA_CAMBIO_HPP
+#ifndef PROBLEMACAMBIO_HPP
+#define PROBELMACAMBIO_HPP
 
 #include <vector>
 #include "moneda.hpp"

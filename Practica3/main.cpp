@@ -21,7 +21,7 @@ int main(){
             break;
 
             case 2:
-                cout << "Problema de la mochila" << endl;
+                void problemaMochila();
             break;
 
             case 3:
