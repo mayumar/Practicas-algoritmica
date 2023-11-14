@@ -9,7 +9,7 @@ using namespace std;
 
 void problemaMochila(){
     int v;
-    cout << "Introduzca el volumen de la mochila: " << endl;
+    cout << "Introduzca el volumen de la mochila: ";
     cin >> v;
 
     vector<Material> materiales;
@@ -77,7 +77,7 @@ void escribirSolucion(vector<MaterialUsado> &solucion){
     cout << endl << "Solucion: " << endl;
     for(MaterialUsado mu: solucion){
         if(mu.getVolumenUsado() != 0){
-            precioFinal += mu.getMaterial().getPrecio();
+            precioFinal += mu.getMaterial().getPrecio() * mu.getVolumenUsado();
             cout << "Material " << mu.getMaterial().getEtiqueta() << ", volumen: " << mu.getVolumenUsado() << endl;
         }
     }
