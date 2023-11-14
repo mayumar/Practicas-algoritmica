@@ -3,6 +3,7 @@
 using namespace std;
 
 void problemaCambio();
+void problemaMochila();
 
 int main(){
     int opt;
@@ -21,7 +22,7 @@ int main(){
             break;
 
             case 2:
-                void problemaMochila();
+                problemaMochila();
             break;
 
             case 3:
