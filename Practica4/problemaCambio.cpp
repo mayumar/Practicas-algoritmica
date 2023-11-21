@@ -43,7 +43,7 @@ void cargarSistemaMonetario(vector<Moneda> &sistemaMonetario, const char *nombre
 void cambio(int cantidad, vector<Moneda> &sistemaMonetario, vector<vector<int>> &matrizEstados){
     
     for(int i = 0; i < sistemaMonetario.size(); i++){
-        matrizEstados[i][0];
+        matrizEstados[i][0] = 0;
     }
 
     for(int i = 0; i < sistemaMonetario.size(); i++){
