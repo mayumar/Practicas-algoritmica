@@ -15,10 +15,10 @@ void problemaCambio(){
     vector<Moneda> sistemaMonetario;
     cargarSistemaMonetario(sistemaMonetario, "../sistemamonetario.txt");
 
-    vector<vector<int>> matrizEstados;
+    vector<vector<int>> matrizEstados = vector<vector<int>>(sistemaMonetario.size(), vector<int>(cantidad+1));
     cambio(cantidad, sistemaMonetario, matrizEstados);
 
-    vector<int> solucion;
+    vector<int> solucion = vector<int>(sistemaMonetario.size(), 0);
     obtenerSolución(matrizEstados, sistemaMonetario, solucion);
 
     escribirSolucion(solucion, sistemaMonetario);
@@ -42,10 +42,37 @@ void cargarSistemaMonetario(vector<Moneda> &sistemaMonetario, const char *nombre
 
 void cambio(int cantidad, vector<Moneda> &sistemaMonetario, vector<vector<int>> &matrizEstados){
     
+    for(int i = 0; i < sistemaMonetario.size(); i++){
+        matrizEstados[i][0];
+    }
+
+    for(int i = 0; i < sistemaMonetario.size(); i++){
+        for(int j = 1; j <= cantidad; j++){
+            if(i == 0){
+                matrizEstados[i][j] = 1 + matrizEstados[i][j-sistemaMonetario[i].getValor()];
+            }else{
+                if(j < sistemaMonetario[i].getValor()){
+                    matrizEstados[i][j] = matrizEstados[i-1][j];
+                }else{
+                    matrizEstados[i][j] = min(matrizEstados[i-1][j], 1+matrizEstados[i][j-sistemaMonetario[i].getValor()]);
+                }
+            }
+        }
+    }
 }
 
 void obtenerSolución(vector<vector<int>> &matrizEstados, vector<Moneda> &sistemaMonetario, vector<int> &solucion){
+    int i = matrizEstados.size()-1;
+    int j = matrizEstados[0].size()-1; //N+1-1
 
+    while(j != 0 && i != 0){
+        if(matrizEstados[i][j] == matrizEstados[i-1][j]){
+            i--;
+        }else{
+            j -= sistemaMonetario[i].getValor();
+            solucion[i]++;
+        }
+    }
 }
 
 void escribirSolucion(vector<int> &solucion, vector<Moneda> &sistemaMonetario){
