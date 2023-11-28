@@ -40,6 +40,8 @@ void cargarMateriales(vector<Material> &materiales, const char *nombreFichero){
     while((file >> etiqueta >> volumen >> precio)){
         materiales.push_back(Material(etiqueta, volumen, precio));
     }
+
+    file.close();
 }
 
 void mochila(float volumenMochila, vector<Material> &materiales, vector<vector<double>> &matrizEstados){
@@ -71,7 +73,7 @@ void obtenerSolucion(vector<vector<double>> &matrizEstados, vector<Material> &ma
     int i = matrizEstados.size()-1;
     int j = matrizEstados[0].size()-1; //V+1-1
 
-    while(j != 0 && i >= 0){
+    while(j != 0 && i != 0){
         if(matrizEstados[i][j] == matrizEstados[i-1][j]){
             i--;
         }else{
@@ -79,6 +81,10 @@ void obtenerSolucion(vector<vector<double>> &matrizEstados, vector<Material> &ma
             solucion[i].setVolumenUsado(materiales[i].getVolumen());
             i--;
         }
+    }
+
+    if(i == 0 && matrizEstados[i][j] != 0){
+        solucion[0].setVolumenUsado(materiales[0].getVolumen());
     }
 }
 

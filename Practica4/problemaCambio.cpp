@@ -9,7 +9,7 @@ using namespace std;
 
 void problemaCambio(){
     int cantidad;
-    cout << "Introduzca la cantidad de cambio a calcular: " << endl;
+    cout << "Introduzca la cantidad de cambio a calcular: ";
     cin >> cantidad;
 
     vector<Moneda> sistemaMonetario;
@@ -38,6 +38,8 @@ void cargarSistemaMonetario(vector<Moneda> &sistemaMonetario, const char *nombre
     while(file >> aux){
         sistemaMonetario.push_back(Moneda(aux));
     }
+
+    file.close();
 }
 
 void cambio(int cantidad, vector<Moneda> &sistemaMonetario, vector<vector<int>> &matrizEstados){
@@ -49,7 +51,7 @@ void cambio(int cantidad, vector<Moneda> &sistemaMonetario, vector<vector<int>> 
     for(int i = 0; i < sistemaMonetario.size(); i++){
         for(int j = 1; j <= cantidad; j++){
             if(i == 0){
-                matrizEstados[i][j] = 1 + matrizEstados[i][j-sistemaMonetario[i].getValor()];
+                matrizEstados[i][j] = 1 + matrizEstados[i][j-sistemaMonetario[0].getValor()];
             }else{
                 if(j < sistemaMonetario[i].getValor()){
                     matrizEstados[i][j] = matrizEstados[i-1][j];
@@ -72,6 +74,10 @@ void obtenerSolución(vector<vector<int>> &matrizEstados, vector<Moneda> &sistem
             j -= sistemaMonetario[i].getValor();
             solucion[i]++;
         }
+    }
+
+    if(i == 0 && matrizEstados[i][j] != 0){
+        solucion[0] = matrizEstados[i][j];
     }
 }
 
