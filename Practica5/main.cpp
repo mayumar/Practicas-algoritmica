@@ -8,6 +8,7 @@ void oneSolLV();
 
 int main(){
     int opt;
+    srand(time(0));
 
     do{
         cout << "Elija una opcion para la resolucion del problema:" << endl;
@@ -24,19 +25,19 @@ int main(){
             break;
 
             case 2:
-                cout << "Una solucion con backtracking" << endl;
+                oneSolBacktracking();
             break;
 
             case 3:
-                cout << "Una solucion con el algoritmo de las Vegas" << endl;
+                oneSolLV();
             break;
 
             case 4:
-                cout << "Saliendo..." << endl;
+                cout << endl << "Saliendo..." << endl;
             break;
 
             default:
-                cout << "Introduzca una opcion correcta" << endl;
+                cout << endl << "Introduzca una opcion correcta" << endl;
         }
 
     }while(opt != 4);
