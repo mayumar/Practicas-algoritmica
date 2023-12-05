@@ -1,4 +1,5 @@
 #include "oneSolutionLV.hpp"
+#include "ClaseTiempo.hpp"
 #include <vector>
 #include <iostream>
 
@@ -6,6 +7,7 @@ using namespace std;
 
 void oneSolLV(){
     int n, cont = 1;
+    Clock time;
 
     cout << endl << "Introduzca el numero de reinas: ";
     cin >> n;
@@ -13,12 +15,15 @@ void oneSolLV(){
     vector<int> Solucion;
     bool exito = false;
 
+    time.start();
     while(!exito){
         exito = nReinasLasVegas(n, Solucion);
 
         if(exito){
+            time.stop();
             cout << endl << "Se ha encontrado solucion con " << cont << " intentos" << endl;
             escribirSolucion(Solucion);
+            cout << "Tiempo: " << time.elapsed() << " microsegundos" << endl << endl;
         }else{
             cont++;
         }

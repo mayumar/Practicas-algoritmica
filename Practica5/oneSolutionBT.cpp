@@ -1,4 +1,5 @@
 #include "oneSolutionBT.hpp"
+#include "ClaseTiempo.hpp"
 #include <vector>
 #include <iostream>
 
@@ -11,8 +12,14 @@ void oneSolBacktracking(){
     cin >> n;
 
     vector<int> Solucion;
+    Clock time;
+
+    time.start();
     nReinasBacktracking(n, Solucion);
+    time.stop();
+
     escribirSolucion(Solucion);
+    cout << "Tiempo: " << time.elapsed() << " microsegundos" << endl << endl;
 }
 
 void nReinasBacktracking(int n, vector<int> &Solucion){

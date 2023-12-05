@@ -5,17 +5,19 @@ using namespace std;
 void allSolBacktracking();
 void oneSolBacktracking();
 void oneSolLV();
+void matricesMonteCarlo();
 
 int main(){
     int opt;
     srand(time(0));
 
     do{
-        cout << "Elija una opcion para la resolucion del problema:" << endl;
-        cout << "1) Todas las soluciones con Backtracking" << endl;
-        cout << "2) Una solucion con Backtracking" << endl;
-        cout << "3) Una solucion con el algoritmo de las Vegas" << endl;
-        cout << "4) Salir" << endl;
+        cout << "Elija una opcion para resolver n reinas:" << endl;
+        cout << "[1] Todas las soluciones con Backtracking" << endl;
+        cout << "[2] Una solucion con Backtracking" << endl;
+        cout << "[3] Una solucion con el algoritmo de las Vegas" << endl;
+        cout << "[4] Producto de matrices con el algoritmo de Monte Carlo" << endl;
+        cout << "[5] Salir" << endl;
         cout << "> ";
         cin >> opt;
 
@@ -33,14 +35,18 @@ int main(){
             break;
 
             case 4:
+                matricesMonteCarlo();
+            break;
+
+            case 5:
                 cout << endl << "Saliendo..." << endl;
             break;
 
             default:
-                cout << endl << "Introduzca una opcion correcta" << endl;
+                cout << endl << "Introduzca una opcion correcta" << endl << endl;
         }
 
-    }while(opt != 4);
+    }while(opt != 5);
 
     return 0;
 }
