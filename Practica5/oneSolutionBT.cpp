@@ -19,7 +19,12 @@ void oneSolBacktracking(){
     time.stop();
 
     escribirSolucion(Solucion);
-    cout << "Tiempo: " << time.elapsed() << " microsegundos" << endl << endl;
+    cout << "Tiempo: " << time.elapsed() << " microsegundos";
+
+    if(time.elapsed() > 1000)
+        cout << " (" << time.elapsed()/1000000.0 << " segundos)";
+    
+    cout << endl << endl;
 }
 
 void nReinasBacktracking(int n, vector<int> &Solucion){

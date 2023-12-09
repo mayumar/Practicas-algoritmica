@@ -24,16 +24,15 @@ void matricesMonteCarlo(){
     multiplicarMatrices(A, B, AB);
     time.stop();
 
-    cout << endl << "Tiempo de multiplicacion: " << time.elapsed() << " microsegundos" << endl;
+    cout << endl << "Tiempo de multiplicacion: " << time.elapsed() << " microsegundos";
+
+    if(time.elapsed() > 1000)
+        cout << " (" << time.elapsed()/1000000.0 << " segundos)";
+    
+    cout << endl;
 
     vector<vector<int>> C;
     generarC(AB, C);
-
-    if(C == AB){
-        cout << endl << "Son iguales" << endl;
-    }else{
-        cout << endl << "No son iguales" << endl;
-    }
 
     bool flag = true;
     int k, cont = 1;
@@ -55,7 +54,12 @@ void matricesMonteCarlo(){
     }else{
         cout << endl << "Las matrices no son iguales, " << cont << " intentos" << endl;
     }
-    cout << endl << "Tiempo del algoritmo: " << time.elapsed() << " microsegundos" << endl << endl;
+    cout << endl << "Tiempo del algoritmo: " << time.elapsed() << " microsegundos";
+
+    if(time.elapsed() > 1000)
+        cout << " (" << time.elapsed()/1000000.0 << " segundos)";
+    
+    cout << endl << endl;
 
 }
 
